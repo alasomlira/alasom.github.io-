@@ -2,7 +2,7 @@ function carregaCSS(){
 	var file = location.pathname.split( "/" ).pop();
 
 	var link = document.createElement( "link" );
-	link.href = "https://github.com/alasomlira/radio/blob/master/style.css";
+	link.href = "https://github.com/alasomlira/alasom.github.io-/blob/master/style.css";
 	link.type = "text/css";
 	link.rel = "stylesheet";
 	link.media = "screen,print";
@@ -11,7 +11,7 @@ function carregaCSS(){
 }
 
 function getInfo(info) {
-    var script = document.querySelectorAll("script[src='https://github.com/alasomlira/radio/blob/master/player.js']");
+    var script = document.querySelectorAll("script[src='https://github.com/alasomlira/alasom.github.io-/blob/master/player.js']");
     var info = script[0].getAttribute(info);
 
     return info;
@@ -51,7 +51,7 @@ function montar(){
 			'</p>' +
 			'<div id="bragaPanel">' +
 		  		'<textarea onclick="this.focus();this.select()" readonly="readonly">' +
-		  			'<script type="text/javascript" player-tytle="' + tytle + '" player-ip="' + ip + '" player-porta="' + porta + '" player-autoplay="' + getInfo('player-autoplay') + '" src="https://lucianobragaweb.github.io/webradio-player/player.js"></script>' +
+		  			'<script type="text/javascript" player-tytle="' + tytle + '" player-ip="' + ip + '" player-porta="' + porta + '" player-autoplay="' + getInfo('player-autoplay') + '" src="https://github.com/alasomlira/alasom.github.io-/blob/master/player.js"></script>' +
 		  		'</textarea>' +
 			'</div>' +
 		'</div>' + // #footer
